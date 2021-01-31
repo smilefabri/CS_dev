@@ -25,8 +25,22 @@ class Vector2(object):
             self.x = self.x  / mag
             self.y = self.y / mag
 
+    #da fare 
     def limit(self,max:float)->None:
         pass
+    def lerp(self):
+        pass
+    def rotate(self,angle:float):
+        pass
+    def dist(self,P:'Vector2')->float:
+        pass
+    def heading(self) ->float:
+        pass
+    def dot(self):
+        pass
+    def angleBetween(self,P:'Vector2')->float:
+        pass
+
 
 
     #Magic function
@@ -51,7 +65,7 @@ class Vector2(object):
 
     
         
-
+#test debug
 def main():
     posizione:Vector2 = Vector2(5,5)
 
