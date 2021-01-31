@@ -17,6 +17,8 @@ class Vector2(object):
     def Magnitude(self)->float:
         return sqrt( self.x**2+self.y**2)
 
+    def set_Magnitude(self):
+        pass
     def Normalize(self)->None:
         mag = self.Magnitude()
         if mag != 0:
