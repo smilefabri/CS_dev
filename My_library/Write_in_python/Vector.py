@@ -19,13 +19,14 @@ class Vector2(object):
 
     def set_Magnitude(self):
         pass
+
     def Normalize(self)->None:
         mag = self.Magnitude()
         if mag != 0:
             self.x = self.x  / mag
             self.y = self.y / mag
 
-    #da fare 
+    #to do
     def limit(self,max:float)->None:
         pass
     def lerp(self):
@@ -40,8 +41,6 @@ class Vector2(object):
         pass
     def angleBetween(self,P:'Vector2')->float:
         pass
-
-
 
     #Magic function
     def __str__(self)-> str:
@@ -67,13 +66,13 @@ class Vector2(object):
         
 #test debug
 def main():
+    
     posizione:Vector2 = Vector2(5,5)
 
     posizione.x = 40
 
     posizione.Normalize()
 
-    
     print(posizione)
     print(posizione.Magnitude())
 
